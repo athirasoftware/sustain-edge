@@ -1,0 +1,136 @@
+// ██╗███╗░░██╗████████╗███████╗██████╗░░██████╗███╗░░░███╗░█████╗░██████╗░████████╗
+// ██║████╗░██║╚══██╔══╝██╔════╝██╔══██╗██╔════╝████╗░████║██╔══██╗██╔══██╗╚══██╔══╝
+// ██║██╔██╗██║░░░██║░░░█████╗░░██████╔╝╚█████╗░██╔████╔██║███████║██████╔╝░░░██║░░░
+// ██║██║╚████║░░░██║░░░██╔══╝░░██╔══██╗░╚═══██╗██║╚██╔╝██║██╔══██║██╔══██╗░░░██║░░░
+// ██║██║░╚███║░░░██║░░░███████╗██║░░██║██████╔╝██║░╚═╝░██║██║░░██║██║░░██║░░░██║░░░
+// ╚═╝╚═╝░░╚══╝░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═════╝░╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░
+/*!
+ * Disigned & Developed by Intersmart Solutions (https://intersmartsolutions.com)
+ * Copyright 2011-2021 Intersmart Solutions pvt LTD.
+ */
+
+.cmnPage
+    padding: 40px 0
+    position: relative
+    .rwflx
+        display: flex
+        flex-wrap: wrap
+        margin: -8px
+        margin-bottom: 25px
+        justify-content: center
+        @media only screen and (min-width:768px)
+            max-width: 85%
+            margin: auto
+        >*
+            width: 100%
+            padding: 8px
+            @media only screen and (min-width:478px)
+                width: calc(100% / 2)
+            @media only screen and (min-width:768px)
+                width: calc(100% / 3)
+
+            .seletBx
+                width: 100%
+                text-align: center
+                height: 100%
+                overflow: hidden
+                transition: all 0.5s
+                padding: 20px
+                display: block
+                @media only screen and (min-width:1351px)
+                    padding: 30px
+                @media only screen and (min-width:1551px)
+                    padding: 50px
+                &:hover
+                    background: #87FF85
+                .icon
+                    width: 60px
+                    height: 60px
+                    margin: auto
+                    @media only screen and (min-width:1551px)
+                        width: 80px
+                        height: 80px
+                    img
+                        width: auto
+                        object-fit: contain
+                .maintxt
+                    font-weight: 600
+                    color: $basecolor
+                    margin: 20px 0
+                    font-size: 16px
+    .flxBox
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        >*
+            width: 100%
+        .contentSec
+            min-height: 60vh
+
+.checkoutPage
+    #checkout
+        position: relative
+        padding: 40px 0
+        .cmnBx
+            padding: 0px
+            .row
+                margin: 0
+                >*
+                    padding: 0px
+            .sbTxt
+                font-size: 22px
+                font-weight: 600
+                color: $basecolor
+                display: flex
+                align-items: center
+                flex-wrap: wrap
+                margin: -5px
+                margin-bottom: 25px
+                >*
+                    padding: 5px
+        .box
+            width: 100%
+            max-width: 100%
+            box-shadow: 0px 11px 20px rgba(5, 16, 55, 0.2)
+            border-radius: 15px
+            position: relative
+            margin: auto
+            background: $white
+            padding: 30px
+            height: 100%
+            .paymentBx
+                width: 100%
+                max-width: 450px
+                li
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    padding: 10px 0
+                    span
+                        font-size: 15px
+                    &:last-of-type
+                        border-top: 1px solid $basecolor
+                        span
+                            font-size: 16px
+                            font-weight: 600
+        .box1
+            padding: 50px 30px
+            .row
+                margin: -7px
+                >*
+                    padding: 7px
+            .cmnbtn
+                width: 100%
+        .redbtn
+            display: block
+            width: fit-content
+            color: #111112
+            font-size: 15px
+            transition: all 0.5s
+            &:hover
+                color: $basecolor
+        .price
+            font-size: 36px
+            font-weight: 700
+            color: $basecolor
+            margin-bottom: 72px

@@ -1,0 +1,176 @@
+// layout
+#pageWrapper
+    overflow-x: hidden
+    background: url('../images/loginBg.jpg') no-repeat
+    background-position: center
+    background-size: cover
+    width: 100%
+
+body
+// BUTTON STYLE
+
+.hoveranim
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    overflow: hidden
+    &::before
+        content: ''
+        position: absolute
+        z-index: 0
+        top: 0
+        bottom: 0
+        width: 100%
+        background: #000
+        -webkit-transform: scaleX(0)
+        -ms-transform: scaleX(0)
+        transform: scaleX(0)
+        -webkit-transition: -webkit-transform 0.3s ease
+        transition: -webkit-transform 0.3s ease
+        transition: transform 0.3s ease
+        transition: transform 0.3s ease, -webkit-transform 0.3s ease
+        left: 0
+        -webkit-transform-origin: right
+        -ms-transform-origin: right
+        transform-origin: right
+    span
+        position: relative
+    &:hover
+        &::before
+            -webkit-transform-origin: left
+            -ms-transform-origin: left
+            transform-origin: left
+            -webkit-transform: scaleX(1)
+            -ms-transform: scaleX(1)
+            transform: scaleX(1)
+        span
+            color: $white
+
+.cmnbtn
+    width: fit-content
+    padding: 10px
+    height: 48px
+    border-radius: 6px !important
+    background: #15273C
+    color: $white
+    display: flex
+    align-items: center
+    justify-content: center
+.titleBx
+    display: flex
+    align-items: center
+    justify-content: center
+    width: fit-content
+    margin: auto
+    .icon
+        width: 60px
+        height: 60px
+        margin: auto
+        margin-bottom: 20px
+        margin-right: 15px
+        @media only screen and (min-width:992px)
+            width: 85px
+            height: 106px
+        img
+            width: 100%
+            height: 100%
+            object-fit: contain
+.cmnBx
+    width: 100%
+    max-width: 100%
+    box-shadow: 0px 11px 20px rgba(5, 16, 55, 0.2)
+    border-radius: 15px
+    position: relative
+    margin: auto
+    background: $white
+    padding: 20px
+    @media only screen and (min-width:992px)
+        padding: 50px
+    .flx
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-bottom: 25px
+        .name
+            font-size: 24px
+            color: $basecolor
+            font-weight: 600
+            margin-bottom: 5px
+        .cmpny
+            font-size: 15px
+            color: #939DC2
+            margin-bottom: 5px
+            text-align: left
+        .links
+            display: block
+            width: fit-content
+            color: #15273C
+            font-size: 16px
+            font-weight: 700
+            transition: all 0.5s
+            &:hover
+                color: $basecolor2
+        .cartbx
+            position: relative
+            .tag
+                position: absolute
+                bottom: -5px
+                right: -10px
+                width: 20px
+                height: 20px
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                font-size: 14px
+                color: $white
+                background: red
+                @media only screen and (min-width:992px)
+                    width: 30px
+                    height: 30px
+        .cart
+            display: block
+            width: 30px
+            height: 30px
+            position: relative
+            @media only screen and (min-width:992px)
+                width: 40px
+                height: 40px
+            .tag
+                position: absolute
+                bottom: -5px
+                right: -10px
+                width: 20px
+                height: 20px
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                font-size: 14px
+                color: $white
+                background: red
+                @media only screen and (min-width:992px)
+                    width: 30px
+                    height: 30px
+            img
+                width: 100%
+                height: 100%
+                object-fit: contain
+    .itemFx
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        margin: -5px
+        >*
+            padding: 5px
+        .lnBtn
+            display: block
+            width: fit-content
+            color: #939DC2
+            font-size: 15px
+            transition: all 0.5s
+            &:hover
+                color: $basecolor
+                    
+

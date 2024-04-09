@@ -1,0 +1,63 @@
+.planPage
+    #plans
+        padding: 40px 0
+        position: relative
+        width: 100%
+        .cmnBx
+            p
+                text-align: center
+
+        .rwflx
+            display: flex
+            flex-wrap: wrap
+            margin: -8px
+            margin-bottom: 25px
+            justify-content: center
+            >*
+                width: 100%
+                padding: 8px
+                @media only screen and (min-width:478px)
+                    width: calc(100% / 2)
+                @media only screen and (min-width:768px)
+                    width: calc(100% / 3)
+                @media only screen and (min-width:992px)
+                    width: calc(100% / 4)
+
+                .seletBx
+                    width: 100%
+                    text-align: center
+                    height: 100%
+                    overflow: hidden
+                    transition: all 0.5s
+                    padding: 20px
+                    @media only screen and (min-width:1351px)
+                        padding: 30px
+                    @media only screen and (min-width:1551px)
+                        padding: 50px
+                    &:hover
+                        background: #87FF85
+                    .icon
+                        width: 60px
+                        height: 60px
+                        margin: auto
+                        @media only screen and (min-width:1551px)
+                            width: 80px
+                            height: 80px
+                        img
+                            width: auto
+                            object-fit: contain
+                    .maintxt
+                        font-weight: 600
+                        color: $basecolor
+                        margin: 20px 0
+                        font-size: 16px
+                        @media only screen and (min-width:478px)
+                            min-height: 75px
+                        @media only screen and (min-width:992px)
+                            min-height: 95px
+                            font-size: 20px
+                        @media only screen and (min-width:1551px)
+                            font-size: 24px
+                    .cmnbtn
+                        width: 100%
+                        margin-bottom: 20px

@@ -1,0 +1,36 @@
+.add_more{
+    
+        width: fit-content;
+        padding: 10px;
+        height: 40px;
+        border-radius: 6px !important;
+        background: #15273c;
+        color: #fff;
+        display: flex;
+        align-items: right;
+     float: right;
+     margin-top: -30px;
+        justify-content: center;
+   
+}
+
+.panel-heading{
+        overflow: hidden;
+
+}
+.item{display: inline-block;
+float: right;}
+.add_more {
+        width: fit-content;
+        padding: 5px 10px;
+        border-radius: 0px !important;
+        background: #15273c;
+        color: #fff;
+        display: flex;
+        align-items: right;
+        float: right;
+        height: auto;
+        margin: 0;
+        justify-content: center;
+        font-size: 16px;
+    }

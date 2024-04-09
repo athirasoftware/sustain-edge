@@ -1,0 +1,122 @@
+.sidebarPage
+    background: url('../images/sideBar.jpg') no-repeat !important
+    background-position: center !important
+    background-size: cover !important
+    width: 100% !important
+
+    #scope
+        .flx
+            .lefBx
+                width: 280px
+                .sideBox
+                    width: 100%
+                    margin-top: 20px
+                    .userBx
+                        display: none
+                    .accordion-body
+                        padding: 20px 0
+                    ul
+                        li
+                            &:not(:last-of-type)
+                                margin-bottom: 15px
+                            a
+                                width: 100%
+                                color: $black
+                                background: #ffffff
+                                display: flex
+                                align-items: center
+                                padding: 15px
+                                border-radius: 20px
+                                box-shadow: 0 11px 20px rgba(5, 16, 55,0.2)
+                                &.active
+                                    background: #87FF85
+
+            .rtsec
+                width: calc(100% - 280px)
+                padding-left: 40px
+                .topBox
+                    width: 100%
+                    @media only screen and (max-width:992px)
+                        display: none
+                    .accordHead
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        .accordion-header
+                            .accordion-button
+                                width: fit-content
+                                border: none
+                                background: transparent
+                                color: $black
+                                font-size: 15px
+                                text-transform: capitalize
+                                outline: none
+                                box-shadow: none
+                                opacity: 0.5
+                                font-weight: 600
+                                &::after
+                                    display: none
+                                &:not(.collapsed)
+                                    opacity: 1
+                #dashBoarAccord
+                    .accordion-header
+                        @media only screen and (min-width:992px)
+                            display: none
+                    .accordion-item
+                        border: none
+                        box-shadow: none
+                    .accordion-collapse
+                        border: none
+                    .accordion-body
+                        border: none
+                        .stationaryBox
+
+                        .mobileBox, .regrets, .newUser
+                            display: none
+                        .cntr
+                            align-items: center
+                            justify-content: center
+                        .rtsertBxc
+                            justify-content: center
+                        .show
+                            display: block !important
+
+                        .cmnBx
+                            &:not(:last-of-type)
+                                margin-bottom: 15px 
+                            .mainTitle
+                                font-size: 20px
+                                font-weight: 700
+                                color: #15273C
+                                margin-bottom: 10px
+                            label
+                                font-weight: 600
+                            .label
+                                font-size: 14px
+                                color: #737992
+                                margin-top: 4px
+                            .item-list
+                                display: flex
+                                flex-wrap: wrap
+                                margin: -10px
+                                width: 100%
+                                >*
+                                    padding: 10px
+                                    width: 100%
+                                .itemBx
+                                    padding: 10px 15px
+                                    display: flex
+                                    flex-wrap: wrap
+                                    align-items: center
+                                    justify-content: space-between
+                                    width: 100%
+                                    border-radius: 10px
+                                    box-shadow: 0 7px 20px rgba(5, 16, 55,0.2)
+                        .rtsertBxc
+                            display: flex
+                            align-items: center
+                            margin: -7px
+                            >*
+                                padding: 7px
+                                .cmnbtn
+                                    min-width: 85px
