@@ -127,7 +127,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
 
                                             <div class="cmnBx">
 
-                                                <div class="mainTitle">1. Fuel & Energy not in S1 & S2</div>
+                                                <div class="mainTitle">12.Downstream Leased Assets</div>
 
                                                 <form action="javascript:void(0)">
 
@@ -171,9 +171,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                             <div class="panel panel-default">
 
                                                                 <div class="panel-heading">Add Scope 1 Information
-                                                                     <div class="item" style="
-                                                                     display: inline-block;
-                                                                     float: right;">
+                                                                     <div class="item">
                                                                  
                                                                         
 <button id="showItemsButton1" type="addmore" class="hoveranim add_more"><span>Add  More</span></button>
@@ -193,8 +191,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                                                 <select name="" id=""
                                                                                     class="form-control">
 
-                                                                                    <option value="">select
-                                                                                        particulars</option>
+                                                                                    <option value="">Select Particulars</option>
 
                                                                                 </select>
 
@@ -245,8 +242,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                                                 <select name="" id=""
                                                                                     class="form-control">
 
-                                                                                    <option value="">select
-                                                                                        particulars</option>
+                                                                                    <option value="">Select Particulars</option>
 
                                                                                 </select>
 
@@ -334,8 +330,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                                                 <select name="" id=""
                                                                                     class="form-control">
 
-                                                                                    <option value="">select
-                                                                                        particulars</option>
+                                                                                    <option value="">Select Particulars</option>
 
                                                                                 </select>
 
@@ -386,8 +381,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                                                 <select name="" id=""
                                                                                     class="form-control">
 
-                                                                                    <option value="">select
-                                                                                        particulars</option>
+                                                                                    <option value="">Select Particulars</option>
 
                                                                                 </select>
 
@@ -453,7 +447,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                                  
                                                                         
 <button id="showItemsButton3" type="addmore" class="hoveranim add_more"><span>Add  More</span></button>
-                                                        </div>
+</div>
 </div>
                                                                 <div class="panel-body" id="itemList3"
                                                                     style="display: none">
@@ -469,8 +463,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                                                 <select name="" id=""
                                                                                     class="form-control">
 
-                                                                                    <option value="">select
-                                                                                        particulars</option>
+                                                                                    <option value="">Select Particulars</option>
 
                                                                                 </select>
 
@@ -521,8 +514,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                                                 <select name="" id=""
                                                                                     class="form-control">
 
-                                                                                    <option value="">select
-                                                                                        particulars</option>
+                                                                                    <option value="">Select Particulars</option>
 
                                                                                 </select>
 
@@ -587,7 +579,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                         
                                                     </div>
 
-                                                    {{-- scope 3 --}}
+                                                   
 
                                                    
 </form>
