@@ -166,7 +166,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                         </div>
 
 
-                                                        {{-- scope-1 --}}
+                                                        
                                                         <div class="container">
                                                             <h4><b>Scope 1</b></h4>
                                                             <div class="panel panel-default">
@@ -175,9 +175,9 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                                      <div class="item">
                                                                  
                                                                         
-<button id="showItemsButton1" type="addmore" class="hoveranim add_more"><span>Add  More</span></button>
+                                                       <button id="showItemsButton1" type="addmore" class="hoveranim add_more"><span>Add  More</span></button>
                                                         </div>
-</div>
+                                                         </div>
                                                                 <div class="panel-body" id="itemList1"
                                                                     style="display: none">
                                                                     <form action="javascript:void(0)">
