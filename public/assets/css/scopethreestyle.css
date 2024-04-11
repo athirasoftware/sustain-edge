@@ -19,7 +19,9 @@
 
 }
 .item{display: inline-block;
-float: right;}
+float: right;
+}
+
 .add_more {
         width: fit-content;
         padding: 5px 10px;
