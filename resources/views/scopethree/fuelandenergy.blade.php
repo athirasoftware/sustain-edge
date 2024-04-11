@@ -22,6 +22,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
     <link rel="stylesheet" href="{{ asset('assets/css/scopethreestyle.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="{{ asset('assets/js/scopethree.js') }}"></script>
     
 </head>
@@ -170,7 +171,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                             <h4><b>Scope 1</b></h4>
                                                             <div class="panel panel-default">
 
-                                                                <div class="panel-heading">Add Scope 1 Information
+                                                                <div class="panel-heading" id="panel-heading-1">Add Scope 1 Information
                                                                      <div class="item">
                                                                  
                                                                         
@@ -180,9 +181,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                                 <div class="panel-body" id="itemList1"
                                                                     style="display: none">
                                                                     <form action="javascript:void(0)">
-{{-- row1 scope1 --}}
 
-                                                                        {{-- 
                                                                         <div class="row">
 
                                                                             <div class="col-sm-4">
@@ -232,63 +231,19 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
 
 
                                                                             </div>
-                                                                        </div> --}}
+                                                                        </div> 
                                                                         
-                                                                        {{-- <div class="row">
-
-                                                                            <div class="col-sm-4">
-
-                                                                                <label for="">Particulars
-                                                                                    *</label>
-
-                                                                                <select name="" id=""
-                                                                                    class="form-control">
-
-                                                                                    <option value="">Select Particulars</option>
-
-                                                                                </select>
-
-
-
-                                                                            </div>
-
-
-                                                                            <div class="col-sm-4">
-                                                                                <label for="ef-data">Unit Of
-                                                                                    Measurement *</label>
-                                                                                <select name="" id=""
-                                                                                    class="form-control">
-
-                                                                                    <option value="">select
-                                                                                    </option>
-
-                                                                                </select>
-                                                                            </div>
-
-
-
-                                                                            <div class="col-sm-4">
-
-                                                                                <label for="">Quantity(Actual)
-                                                                                    *</label>
-
-                                                                                <select name="" id=""
-                                                                                    class="form-control">
-
-                                                                                    <option value="">select
-                                                                                    </option>
-
-                                                                                </select>
-
-
-
-                                                                            </div>
-
-                                                                        </div> --}}
-
-
 
                                                                         <script>
+                                                                             $(document).ready(function() {
+                                                                            // Initially hide the itemList1
+                                                                            $('#itemList1').hide();
+                                                                        
+                                                                            // Show itemList1 when the panel-heading-1 is clicked
+                                                                            $('#panel-heading-1').click(function() {
+                                                                                $('#itemList1').show();
+                                                                            });
+                                                                            });
                                                                             const showItemsButton1 = document.getElementById('showItemsButton1');
                                                                             const itemList1 = document.getElementById('itemList1');
                                                                             
@@ -296,7 +251,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                                                 // Create a new row
                                                                                 let newRow = document.createElement('div');
                                                                                 newRow.innerHTML = `
-                                                                                
+                                                                                <hr />
                                                                                 <div class="row">
                                                                                     <div class="col-sm-4">
                                                                                         
@@ -319,7 +274,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                                                     </div>
                                                                                    
                                                                                 </div>
-                                                                                <hr />`;
+                                                                                 `;
                                                                         
                                                                                 // Append the new row to the list
                                                                                 itemList1.appendChild(newRow);
@@ -344,7 +299,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
  <h4><b>Scope 2</b></h4>
                                                             <div class="panel panel-default">
 
-                                                                <div class="panel-heading">Add Scope 2 Information
+                                                                <div id="panel-heading-2" class="panel-heading">Add Scope 2 Information
                                                                      <div class="item">
                                                                  
                                                                         
@@ -405,70 +360,59 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
 
                                                                             </div>
                                                                         </div>
-                                                                        <hr />
-                                                                        <div class="row">
-
-                                                                            <div class="col-sm-4">
-
-                                                                                <label for="">Particulars
-                                                                                    *</label>
-
-                                                                                <select name="" id=""
-                                                                                    class="form-control">
-
-                                                                                    <option value="">Select Particulars</option>
-
-                                                                                </select>
-
-
-
-                                                                            </div>
-
-
-                                                                            <div class="col-sm-4">
-                                                                                <label for="ef-data">Unit Of
-                                                                                    Measurement *</label>
-                                                                                <select name="" id=""
-                                                                                    class="form-control">
-
-                                                                                    <option value="">select
-                                                                                    </option>
-
-                                                                                </select>
-                                                                            </div>
-
-
-
-                                                                            <div class="col-sm-4">
-
-                                                                                <label for="">Quantity(Actual)
-                                                                                    *</label>
-
-                                                                                <select name="" id=""
-                                                                                    class="form-control">
-
-                                                                                    <option value="">select
-                                                                                    </option>
-
-                                                                                </select>
-
-
-
-                                                                            </div>
-
-                                                                        </div>
+                                                                       
 
 
 
                                                                         <script>
-                                                                            const showItemsButton2 = document.getElementById('showItemsButton2');
-                                                                            const itemList2 = document.getElementById('itemList2');
-
-                                                                            showItemsButton2.addEventListener('click', () => {
-                                                                                itemList2.style.display = itemList2.style.display === 'none' ? 'block' :
-                                                                                    'none'; // Show the list when button is clicked
-                                                                            });
-                                                                        </script>
+                                                                            $(document).ready(function() {
+                                                                           // Initially hide the itemList2
+                                                                           $('#itemList2').hide();
+                                                                       
+                                                                           // Show itemList2 when the panel-heading-2 is clicked
+                                                                           $('#panel-heading-2').click(function() {
+                                                                               $('#itemList2').show();
+                                                                           });
+                                                                           });
+                                                                           const showItemsButton2 = document.getElementById('showItemsButton2');
+                                                                           const itemList2 = document.getElementById('itemList2');
+                                                                           
+                                                                           showItemsButton2.addEventListener('click', () => {
+                                                                               // Create a new row
+                                                                               let newRow = document.createElement('div');
+                                                                               newRow.innerHTML = `
+                                                                               <hr />
+                                                                               <div class="row">
+                                                                                   <div class="col-sm-4">
+                                                                                       
+                                                                                       <label for="">Particulars*</label>
+                                                                                       <select name="" id="" class="form-control">
+                                                                                           <option value="">Select Particulars</option>
+                                                                                       </select>
+                                                                                   </div>
+                                                                                   <div class="col-sm-4">
+                                                                                       <label for="ef-data">Unit Of Measurement *</label>
+                                                                                       <select name="" id="" class="form-control">
+                                                                                           <option value="">select</option>
+                                                                                       </select>
+                                                                                   </div>
+                                                                                   <div class="col-sm-4">
+                                                                                       <label for="">Quantity(Actual)*</label>
+                                                                                       <select name="" id="" class="form-control">
+                                                                                           <option value="">select</option>
+                                                                                       </select>
+                                                                                   </div>
+                                                                                  
+                                                                               </div>
+                                                                                `;
+                                                                       
+                                                                               // Append the new row to the list
+                                                                               itemList2.appendChild(newRow);
+                                                                           
+                                                                               // Show the list
+                                                                               itemList2.style.display = 'block';
+                                                                           });
+                                                                           </script>
 
                                                                 </div>
 
@@ -477,7 +421,7 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
                                                             <h4><b>Scope 3</b></h4>
                                                             <div class="panel panel-default">
 
-                                                                <div class="panel-heading">Add Scope 3 Information
+                                                                <div id="panel-heading-3" class="panel-heading">Add Scope 3 Information
                                                                      <div class="item">
                                                                  
                                                                         
@@ -538,70 +482,58 @@ $loginUserId = Crypt::encrypt(Auth::user()->id);
 
                                                                             </div>
                                                                         </div>
-                                                                        <hr />
-                                                                        <div class="row">
-
-                                                                            <div class="col-sm-4">
-
-                                                                                <label for="">Particulars
-                                                                                    *</label>
-
-                                                                                <select name="" id=""
-                                                                                    class="form-control">
-
-                                                                                    <option value="">Select Particulars</option>
-
-                                                                                </select>
-
-
-
-                                                                            </div>
-
-
-                                                                            <div class="col-sm-4">
-                                                                                <label for="ef-data">Unit Of
-                                                                                    Measurement *</label>
-                                                                                <select name="" id=""
-                                                                                    class="form-control">
-
-                                                                                    <option value="">select
-                                                                                    </option>
-
-                                                                                </select>
-                                                                            </div>
-
-
-
-                                                                            <div class="col-sm-4">
-
-                                                                                <label for="">Quantity(Actual)
-                                                                                    *</label>
-
-                                                                                <select name="" id=""
-                                                                                    class="form-control">
-
-                                                                                    <option value="">select
-                                                                                    </option>
-
-                                                                                </select>
-
-
-
-                                                                            </div>
-
-                                                                        </div>
-
+                                                                       
 
 
                                                                         <script>
-                                                                            const showItemsButton3 = document.getElementById('showItemsButton3');
-                                                                            const itemList3= document.getElementById('itemList3');
-
-                                                                            showItemsButton3.addEventListener('click', () => {
-                                                                                itemList3.style.display = itemList3.style.display === 'none' ? 'block' :
-                                                                                    'none'; // Show the list when button is clicked
-                                                                            });
-                                                                        </script>
+                                                                            $(document).ready(function() {
+                                                                           // Initially hide the itemList3
+                                                                           $('#itemList3').hide();
+                                                                       
+                                                                           // Show itemList3 when the panel-heading-3 is clicked
+                                                                           $('#panel-heading-3').click(function() {
+                                                                               $('#itemList3').show();
+                                                                           });
+                                                                           });
+                                                                           const showItemsButton3 = document.getElementById('showItemsButton3');
+                                                                           const itemList3 = document.getElementById('itemList3');
+                                                                           
+                                                                           showItemsButton3.addEventListener('click', () => {
+                                                                               // Create a new row
+                                                                               let newRow = document.createElement('div');
+                                                                               newRow.innerHTML = `
+                                                                               <hr />
+                                                                               <div class="row">
+                                                                                   <div class="col-sm-4">
+                                                                                       
+                                                                                       <label for="">Particulars*</label>
+                                                                                       <select name="" id="" class="form-control">
+                                                                                           <option value="">Select Particulars</option>
+                                                                                       </select>
+                                                                                   </div>
+                                                                                   <div class="col-sm-4">
+                                                                                       <label for="ef-data">Unit Of Measurement *</label>
+                                                                                       <select name="" id="" class="form-control">
+                                                                                           <option value="">select</option>
+                                                                                       </select>
+                                                                                   </div>
+                                                                                   <div class="col-sm-4">
+                                                                                       <label for="">Quantity(Actual)*</label>
+                                                                                       <select name="" id="" class="form-control">
+                                                                                           <option value="">select</option>
+                                                                                       </select>
+                                                                                   </div>
+                                                                                  
+                                                                               </div>
+                                                                                `;
+                                                                       
+                                                                               // Append the new row to the list
+                                                                               itemList3.appendChild(newRow);
+                                                                           
+                                                                               // Show the list
+                                                                               itemList3.style.display = 'block';
+                                                                           });
+                                                                           </script>
 
                                                                 </div>
 
